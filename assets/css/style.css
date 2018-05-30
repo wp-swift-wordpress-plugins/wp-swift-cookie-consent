@@ -1,0 +1,38 @@
+#wp-swift-cookie-consent-form {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #333333;
+	color: white;
+	opacity: 0;
+	-webkit-transform: translateY(50px);
+	-ms-transform: translateY(50px);
+	-o-transform: translateY(50px);
+	transform: translateY(50px);
+	-webkit-transition: transform 0.5s, opacity 0.5s;
+	-o-transition: transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+#wp-swift-cookie-consent-form.set {
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);	
+}
+#wp-swift-cookie-consent-form .content{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 6px 0;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+}
+a.wp-swift-cookie-consent-link {
+	background-color: #800000;
+	color: white;
+	padding: 0.2rem 1rem;
+	margin-left: 1rem;
+}
