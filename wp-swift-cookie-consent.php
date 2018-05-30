@@ -53,9 +53,14 @@ function wp_swift_cookie_consent_assets() {
 	}
 }
 
+/**
+ * Plugin settings link
+ *
+ * @since    1.0.0
+ */
 function add_action_links ( $links ) {
- $mylinks = array(
- '<a href="' . admin_url( 'options-general.php?page=wp-swift-cookie-consent' ) . '">Settings</a>',
- );
-return array_merge( $links, $mylinks );
+	$mylinks = array(
+	'<a href="' . admin_url( 'options-general.php?page=wp-swift-cookie-consent' ) . '">Settings</a>',
+	);
+	return array_merge( $links, $mylinks );
 }
