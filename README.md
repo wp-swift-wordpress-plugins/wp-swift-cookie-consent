@@ -60,8 +60,8 @@ a.wp-swift-cookie-consent-link {
 
 ### JavaScript
 ```js
-$(document).ready(function() {
-    //localStorage.clear();//Debug
+jQuery(document).ready(function($){
+    // localStorage.clear();//Debug
     var $consentHtml = $('#wp-swift-cookie-consent-form');
     var cookieConsentName = "wp-swift-cookie-consent";
     var getCookieConsent = function(name) {
