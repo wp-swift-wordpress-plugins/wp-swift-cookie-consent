@@ -48,7 +48,7 @@ function wp_swift_cookie_consent_assets() {
 		wp_enqueue_style( 'wp-swift-cookie-consent-style', plugin_dir_url( __FILE__ ) . 'assets/css/style.css', array(), '1.0');
 	}
 	if (!$disable_javascript) {
-    	wp_register_script( 'wp-swift-cookie-consent-script', plugin_dir_url( __FILE__ ) . 'assets/js/script.js', array(), '1.0', false );
+    	wp_register_script( 'wp-swift-cookie-consent-script', plugin_dir_url( __FILE__ ) . 'assets/js/script.js', array( 'jquery' ), '1.0', false );
     	wp_enqueue_script( 'wp-swift-cookie-consent-script' );
 	}
 }

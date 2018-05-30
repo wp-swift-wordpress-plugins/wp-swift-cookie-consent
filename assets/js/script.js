@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($){
 	// localStorage.clear();//Debug
 	var $consentHtml = $('#wp-swift-cookie-consent-form');
 	var cookieConsentName = "wp-swift-cookie-consent";
