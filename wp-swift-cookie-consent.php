@@ -52,7 +52,6 @@ function wp_swift_cookie_consent_assets() {
     	wp_enqueue_script( 'wp-swift-cookie-consent-script' );
 	}
 }
-
 /**
  * Plugin settings link
  *
@@ -64,3 +63,15 @@ function add_action_links ( $links ) {
 	);
 	return array_merge( $links, $mylinks );
 }
+if ( is_admin() ) {
+	$wp_swift_cookie_consent = new WPSwiftCookieConsent(); //Admin interface
+}
+
+/* 
+ * Retrieve this value with:
+ * $wp_swift_cookie_consent_options = get_option( 'wp_swift_cookie_consent_option_name' ); // Array of All Options
+ * $message_0 = $wp_swift_cookie_consent_options['message_0']; // Message
+ * $button_text_1 = $wp_swift_cookie_consent_options['button_text_1']; // Button text
+ * $disable_css_2 = $wp_swift_cookie_consent_options['disable_css_2']; // Disable CSS
+ * $disable_javascript_3 = $wp_swift_cookie_consent_options['disable_javascript_3']; // Disable JavaScript
+ */
